@@ -1,50 +1,234 @@
-# Heart Disease Prediction using Logistic Regression
+\# Heart Disease Prediction using Machine Learning
 
-## Objective
 
-Predict whether a patient has heart disease using medical information.
 
-## Features Used
+\## Overview
 
-* Age
-* Sex
-* Chest Pain Type (cp)
-* Resting Blood Pressure (trestbps)
-* Cholesterol (chol)
-* Maximum Heart Rate (thalach)
-* Oldpeak
 
-## Target
 
-* 0 = No Heart Disease
-* 1 = Heart Disease
+This project predicts the presence of heart disease using patient medical data. Multiple machine learning algorithms were implemented and compared to evaluate their performance on the same dataset.
 
-## Workflow
 
-1. Load dataset
-2. Check missing values
-3. Select features and target
-4. Split data into training and testing sets
-5. Train Logistic Regression model
-6. Make predictions
-7. Evaluate using Accuracy and Confusion Matrix
 
-## Results
+The goal is to understand the complete machine learning workflow, from data preprocessing and model training to evaluation and prediction.
 
-Accuracy: 75.12%
 
-Confusion Matrix:
 
-[[73 29]
-[22 81]]
+\---
 
-## Technologies Used
 
-* Python
-* Pandas
-* Scikit-Learn
-* Jupyter Notebook
 
-## Author
+\## Dataset
 
-Kotrica Vignesh
+
+
+The project uses the Heart Disease Dataset containing patient health information and a target variable indicating whether heart disease is present.
+
+
+
+\### Target Variable
+
+
+
+\* \*\*0\*\* → No Heart Disease
+
+\* \*\*1\*\* → Heart Disease Present
+
+
+
+\---
+
+
+
+\## Features Used
+
+
+
+\* Age
+
+\* Sex
+
+\* Chest Pain Type (cp)
+
+\* Resting Blood Pressure (trestbps)
+
+\* Cholesterol (chol)
+
+\* Maximum Heart Rate Achieved (thalach)
+
+\* ST Depression Induced by Exercise (oldpeak)
+
+
+
+\---
+
+
+
+\## Machine Learning Models Implemented
+
+
+
+\### Logistic Regression
+
+
+
+A supervised classification algorithm used as the baseline model.
+
+
+
+\*\*Accuracy:\*\* 75.12%
+
+
+
+\---
+
+
+
+\### K-Nearest Neighbors (KNN)
+
+
+
+A distance-based classification algorithm that predicts the class based on the nearest neighbors.
+
+
+
+\*\*Configuration:\*\*
+
+
+
+\* K = 3
+
+\* StandardScaler used for feature scaling
+
+
+
+\*\*Accuracy:\*\* 87.80%
+
+
+
+\---
+
+
+
+\## Project Workflow
+
+
+
+1\. Load Dataset
+
+2\. Select Features and Target Variable
+
+3\. Split Data into Training and Testing Sets
+
+4\. Scale Features using StandardScaler
+
+5\. Train Machine Learning Model
+
+6\. Make Predictions
+
+7\. Evaluate Performance
+
+8\. Predict on New Patient Data
+
+
+
+\---
+
+
+
+\## Evaluation Metrics
+
+
+
+The following metrics were used to evaluate model performance:
+
+
+
+\* Accuracy Score
+
+\* Confusion Matrix
+
+
+
+\---
+
+
+
+\## Technologies Used
+
+
+
+\* Python
+
+\* Pandas
+
+\* Scikit-Learn
+
+\* Jupyter Notebook
+
+
+
+\---
+
+
+
+\## Results
+
+
+
+| Model                     | Accuracy |
+
+| ------------------------- | -------- |
+
+| Logistic Regression       | 75.12%   |
+
+| K-Nearest Neighbors (KNN) | 87.80%   |
+
+
+
+KNN achieved better performance than Logistic Regression on this dataset.
+
+
+
+\---
+
+
+
+\## Repository Structure
+
+
+
+```text
+
+Heart-Disease-Prediction/
+
+│
+
+├── heart.csv
+
+├── heart disease prediction logistic.ipynb
+
+├── heart disease prediction KNN.ipynb
+
+└── README.md
+
+```
+
+
+
+\---
+
+
+
+\## Author
+
+
+
+Vignesh Kotrica
+
+
+
+Machine Learning Learning Project
+
+
+
