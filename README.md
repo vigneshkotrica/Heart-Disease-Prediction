@@ -1,144 +1,60 @@
 # Heart Disease Prediction using Machine Learning
 
-## Overview
+## Objective
 
-This project predicts the presence of heart disease using patient medical data. Multiple machine learning classification algorithms were implemented and compared to evaluate their performance.
-
-The project demonstrates the complete machine learning workflow including data loading, feature selection, model training, prediction, and evaluation.
-
----
+Predict whether a patient has heart disease using medical information.
 
 ## Dataset
 
-Heart Disease Dataset
+* Heart Disease Dataset
+* Records: 1025
+* Features Used:
 
-The dataset contains medical information of patients and a target variable indicating the presence or absence of heart disease.
+  * Age
+  * Sex
+  * Chest Pain Type (cp)
+  * Resting Blood Pressure (trestbps)
+  * Cholesterol (chol)
+  * Maximum Heart Rate (thalach)
+  * ST Depression (oldpeak)
 
-### Target Variable
-
-- 0 → No Heart Disease
-- 1 → Heart Disease Present
-
----
-
-## Features Used
-
-The following features were used for training the models:
-
-- Age
-- Sex
-- Chest Pain Type (cp)
-- Resting Blood Pressure (trestbps)
-- Cholesterol (chol)
-- Maximum Heart Rate Achieved (thalach)
-- ST Depression Induced by Exercise (oldpeak)
-
----
-
-## Machine Learning Models Implemented
+## Models Implemented
 
 ### 1. Logistic Regression
 
-A supervised classification algorithm that predicts the probability of heart disease using the sigmoid function.
-
-**Accuracy:** 75.12%
-
----
+* Accuracy: 75.12%
 
 ### 2. K-Nearest Neighbors (KNN)
 
-A distance-based classification algorithm that classifies a patient based on the majority class among its nearest neighbors.
-
-**Configuration:**
-- K = 3
-- StandardScaler used for feature scaling
-
-**Accuracy:** 87.80%
-
----
+* Accuracy: 87.80%
+* n_neighbors = 3
 
 ### 3. Decision Tree
 
-A tree-based classification algorithm that learns decision rules from the training data.
+* Accuracy: 78.54%
+* max_depth = 3
 
-**Configuration:**
-- max_depth = 3
+### 4. Random Forest
 
-**Accuracy:** 78.54%
-
----
+* Accuracy: 100.00%
+* n_estimators = 100
 
 ## Model Comparison
 
-| Model | Accuracy |
-|---------|----------|
-| Logistic Regression | 75.12% |
-| Decision Tree | 78.54% |
-| K-Nearest Neighbors (KNN) | 87.80% |
-
-### Best Performing Model
-
-K-Nearest Neighbors (KNN) achieved the highest accuracy on this dataset.
-
----
-
-## Project Workflow
-
-1. Load Dataset
-2. Select Features and Target Variable
-3. Split Data into Training and Testing Sets
-4. Scale Features (for KNN)
-5. Train Model
-6. Make Predictions
-7. Evaluate Performance
-8. Predict on New Patient Data
-
----
-
-## Evaluation Metrics
-
-The following metrics were used:
-
-- Accuracy Score
-- Confusion Matrix
-
----
+| Model               | Accuracy |
+| ------------------- | -------: |
+| Logistic Regression |   75.12% |
+| Decision Tree       |   78.54% |
+| KNN                 |   87.80% |
+| Random Forest       |  100.00% |
 
 ## Technologies Used
 
-- Python
-- Pandas
-- Scikit-Learn
-- Jupyter Notebook
-
----
-
-## Repository Structure
-
-```text
-Heart-Disease-Prediction/
-│
-├── heart.csv
-├── heart disease prediction logistic.ipynb
-├── heart disease prediction KNN.ipynb
-├── decision_tree.ipynb
-└── README.md
-```
-
----
-
-## Future Improvements
-
-- Random Forest Classifier
-- Hyperparameter Tuning
-- Cross Validation
-- Feature Importance Analysis
-- Model Deployment using Flask or Streamlit
-
----
+* Python
+* Pandas
+* Scikit-Learn
+* Jupyter Notebook
 
 ## Author
 
 Vignesh Kotrica
-
-Machine Learning Learning Project
