@@ -1,10 +1,12 @@
 # Machine Learning Algorithms
 
-A collection of Machine Learning algorithms implemented from scratch using Python and Scikit-learn/TensorFlow. This repository is organized into **Supervised** and **Unsupervised** learning algorithms with practical implementations on real datasets.
+A collection of Machine Learning algorithms implemented using **Python**, **Scikit-learn**, and **TensorFlow/Keras**. This repository is organized into **Supervised** and **Unsupervised** learning algorithms with practical implementations on real-world datasets.
 
-## Repository Structure
+---
 
-```
+# Repository Structure
+
+```text
 Machine-Learning-Algorithms/
 │
 ├── Supervised/
@@ -13,7 +15,8 @@ Machine-Learning-Algorithms/
 │   ├── KNN.ipynb
 │   ├── decision_tree.ipynb
 │   ├── random_forest.ipynb
-│   └── ANN.ipynb
+│   ├── ANN.ipynb
+│   └── SVM.ipynb
 │
 ├── Unsupervised/
 │   └── KMeans_clustering.ipynb
@@ -25,9 +28,11 @@ Machine-Learning-Algorithms/
 └── README.md
 ```
 
-## Algorithms Implemented
+---
 
-### Supervised Learning
+# Algorithms Implemented
+
+## Supervised Learning
 
 * Linear Regression
 * Logistic Regression
@@ -35,12 +40,15 @@ Machine-Learning-Algorithms/
 * Decision Tree
 * Random Forest
 * Artificial Neural Network (ANN)
+* Support Vector Machine (SVM)
 
-### Unsupervised Learning
+## Unsupervised Learning
 
 * K-Means Clustering
 
-## Datasets
+---
+
+# Datasets Used
 
 ### Heart Disease Dataset
 
@@ -51,6 +59,7 @@ Used for:
 * Decision Tree
 * Random Forest
 * Artificial Neural Network (ANN)
+* Support Vector Machine (SVM)
 
 ### Students Dataset
 
@@ -58,7 +67,9 @@ Used for:
 
 * K-Means Clustering
 
-## Technologies Used
+---
+
+# Technologies Used
 
 * Python
 * Pandas
@@ -67,43 +78,71 @@ Used for:
 * TensorFlow / Keras
 * Jupyter Notebook
 
-## Machine Learning Workflow
+---
+
+# Machine Learning Workflow
+
+Most supervised learning projects in this repository follow the workflow below:
 
 1. Import required libraries
 2. Load dataset
-3. Select features and target
+3. Select features (X) and target (y)
 4. Split data into training and testing sets
-5. Preprocess data (if required)
-6. Train the model
-7. Make predictions
-8. Evaluate model performance
+5. Perform feature scaling (where required)
+6. Create the machine learning model
+7. Train the model
+8. Make predictions
+9. Evaluate using Accuracy Score and Confusion Matrix
 
-## Evaluation Metrics
+---
 
-The implemented models are evaluated using:
+# Algorithms Overview
+
+| Algorithm           | Type         | Main Idea                                                 |
+| ------------------- | ------------ | --------------------------------------------------------- |
+| Linear Regression   | Supervised   | Predict continuous values using the best-fit line         |
+| Logistic Regression | Supervised   | Binary classification using the Sigmoid function          |
+| KNN                 | Supervised   | Predict using the majority vote of nearest neighbors      |
+| Decision Tree       | Supervised   | Classify using a sequence of decision rules               |
+| Random Forest       | Supervised   | Combine multiple Decision Trees using voting              |
+| ANN                 | Supervised   | Learn complex patterns using layers of artificial neurons |
+| SVM                 | Supervised   | Find the optimal hyperplane with the maximum margin       |
+| K-Means             | Unsupervised | Group similar data points into clusters                   |
+
+---
+
+# Evaluation Metrics
+
+Models are evaluated using:
 
 * Accuracy Score
 * Confusion Matrix
-* Loss (ANN)
-* Training Accuracy
-* Testing Accuracy
+* Training Accuracy (ANN)
+* Testing Accuracy (ANN)
+* Loss Function (ANN)
 
-## Learning Objectives
+---
 
-This repository is part of my Machine Learning learning journey. The goal is to understand the intuition, implementation, and practical application of various Machine Learning algorithms through hands-on coding and experimentation.
+# Learning Objectives
 
-## Future Additions
+This repository documents my Machine Learning learning journey. The objective is to understand the intuition, implementation, and practical application of fundamental Machine Learning algorithms through coding, experimentation, and evaluation.
 
-* Support Vector Machine (SVM)
+---
+
+# Future Additions
+
 * Naive Bayes
 * Principal Component Analysis (PCA)
 * XGBoost
 * AdaBoost
 * Gradient Boosting
 * Model Evaluation Techniques
+* Cross Validation
 * Hyperparameter Tuning
 * Feature Engineering
 
 ---
 
-**Author:** Vignesh Kotrica
+# Author
+
+**Vignesh Kotrica**
